@@ -16,7 +16,7 @@ describe('fetchBreedDescription', () => {
     });
   });
 
-  it('returns a string description "Invalid breed name"when an invalid/non-existent breed is passed in.', (done) => {
+  it('returns a string description "Invalid breed name" when an invalid/non-existent breed is passed in.', (done) => {
     fetchBreedDescription('google', (err, desc) => {
       assert.equal(err, null);
       const expectedDesc = "Invalid breed name";
